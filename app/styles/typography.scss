@@ -1,0 +1,54 @@
+body {
+  font-family: $heading-font-family;
+  font-size: 100%;
+  color: $black-lighter;
+}
+a {text-decoration: none; }
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  strong {
+    font-weight: 900;
+  }
+  &.large-text {
+    font-size: 200%;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  margin-bottom: 1.5rem;
+}
+h1, h2 { line-height: 1.1; }
+h3, h4 { line-height: 1.3; }
+h1 {
+  font-size: 400%;
+  @media #{$medium-up} {
+    letter-spacing: -1px;
+  }
+}
+h2 { font-size: 250%; letter-spacing: -1px; }
+h3 { font-size: 200%; }
+h4 { font-size: 180%; }
+h5 { font-size: 130%; }
+
+ul, ol {
+  margin-left: 30px;
+  list-style-position: inside;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+
+  li {
+    list-style: disc;
+    line-height: 1.5;
+  }
+}
+italic { font-style: italic; }
+bold   { font-weight: 700;}
+
+block-margins { margin: 1em 0; }
+
+unordered-list { list-style-type: disc; }
+ordered-list { list-style: decimal; }

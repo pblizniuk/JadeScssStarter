@@ -1,0 +1,14 @@
+{
+  "name": "a-sol-electric",
+  "private": true,
+  "dependencies": {
+    "bourbon": "^4.2.6",
+    "jquery": "^2.0.0",
+    "modernizr": "~2.8.1",
+    "neat": "^1.7.4",
+    "reset-scss": "*",
+    "slick-carousel": "^1.6.0",
+    "animsition": "^4.0.2",
+    "waypoints": "jquery-waypoints#^4.0.1"
+  }
+}

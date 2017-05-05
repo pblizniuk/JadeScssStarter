@@ -1,0 +1,38 @@
+.button, a.button {
+  display: inline-block;
+
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 15px 40px;
+
+  cursor: pointer;
+  transition: all .2s ease;
+  text-align: center;
+
+  border: 1px solid #fff;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+
+  &.primary {
+    color: #000;
+    border-color: #fff;
+    background-color: #fff;
+  }
+
+  &.secondary {
+    color: #fff;
+    background-color: transparent;
+  }
+
+  &:hover {
+    border-color: rgba(255, 255, 255, .6);
+    background-color: rgba(255, 255, 255, .6);
+  }
+
+  @media #{$medium-up} {
+    width: auto;
+  }
+}

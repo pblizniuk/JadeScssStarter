@@ -1,0 +1,32 @@
+.home {
+  .hero {
+    background-image: url(/images/hero-home.jpg);
+    padding: 50px 0;
+    .hero-content {
+      position: relative;
+      z-index: 3;
+    
+      h2 {
+        color: #fff;
+        font-weight: 100;
+        padding-top: 2rem;
+
+        strong {
+          font-weight: 300;
+        }
+      }
+
+      em {
+        font-family: $special-font;
+        font-size: .8em;
+      }
+
+      @media #{$medium-up} {
+        @include span-columns(7);
+      }
+    }
+    @media #{$medium-up} {
+      padding: 210px 0;
+    }
+  }
+}

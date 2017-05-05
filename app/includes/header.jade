@@ -1,0 +1,17 @@
+block vars
+  - var bodyClass = 'home'; // default
+-var menu = { 'home': '/', 'about': '/about.html' };
+nav.main-nav
+  .wrapper
+    ul
+      each val, key in menu
+        if bodyClass === key
+          li.active
+            a(href=val, title=key)= key
+        else
+          li
+            a(href=val, title=key)= key
+.header
+  .wrapper
+    h3 Header
+      

@@ -1,0 +1,15 @@
+@mixin overlay() {
+  position: relative;
+  span.overlay {
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
+    display: block;
+
+    @include position(absolute, 0 0 0 0);
+    @include transition(background, .5s ease);
+  }
+}
+
+@mixin container-padding() {
+  padding: 6rem 0;
+}
